@@ -1,0 +1,9 @@
+2020-05-25 09:27:59,581 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-25 09:28:04,858 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/chatbot/lib/python3.6/site-packages/sanic/server.py", line 895, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2020-05-25 09:29:55,597 [INFO ]  Starting Rasa server on http://localhost:5005

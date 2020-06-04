@@ -1,0 +1,369 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- accept
+- reject
+- begin_lead
+- goodbye
+- recommend
+- car_model_name
+- Brand
+- hyundai
+- Maruti
+- Toyota
+- TaTa
+- Suzuki
+- Honda
+- i20
+- i10
+- Verna
+- Creta
+- sport
+- Megna
+- Asta
+- 12_Inc
+- 13_Inc
+- 14_inc
+- I'm intrested
+- 14_Inc
+- Hyundai
+- Details
+- Recommend Tyres
+- manufacturer
+slots:
+  12_Inc:
+    type: unfeaturized
+    auto_fill: false
+  Hyundai:
+    type: unfeaturized
+    auto_fill: false
+  budget:
+    type: unfeaturized
+    auto_fill: false
+  i20:
+    type: unfeaturized
+    auto_fill: false
+  manufacturer:
+    type: unfeaturized
+    auto_fill: false
+  mockup:
+    type: unfeaturized
+    auto_fill: false
+  name:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  requirement:
+    type: unfeaturized
+    auto_fill: false
+  sport:
+    type: unfeaturized
+    auto_fill: false
+  timeline:
+    type: unfeaturized
+    auto_fill: false
+  url:
+    type: unfeaturized
+    auto_fill: false
+responses:
+  utter_ask_name:
+  - text: contact_details
+  utter_lead_q2:
+  - text: Thanks for your information and being this patient. We appreciate it!
+  utter_lead_q4:
+  - text: I will have our Business Experts get in touch with you soon, to make your
+      project a reality!
+  utter_lead_q5:
+  - text: "In the meanwhile for anything,\n you can contact us at https://eluminoustechnologies.com\n\
+      \ or +91  253 238 2566"
+  utter_greet:
+  - text: 👋 Hi! I'm Car Tyre, the eLuminous Virtual Assistant. How may I help you
+      today?
+    buttons:
+    - title: Recommend Tyres
+      payload: Recommend Tyres
+  utter_ans:
+  - text: " I can help you with the best and suitable tyre for your car \U0001F697\
+      \U0001F699\n . You can go by 'Manufacturer' or 'Brand'."
+    buttons:
+    - title: Manufacturer
+      payload: manufacturer
+    - title: Brand
+      payload: Brand
+  utter_ask_manufacturer:
+  - text: Please select your car manufacturer 👇
+    buttons:
+    - title: Maruti
+      payload: Maruti
+    - title: Hyundai
+      payload: Hyundai
+    - title: Toyota
+      payload: within the next 3 months
+    - title: TaTa
+      payload: after 3 months
+  utter_ask_Hyundai:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_ask_i20:
+  - text: "\U0001F4DD Noted!\n\n Also, help me with the car variant."
+    buttons:
+    - title: Sport
+      payload: sport
+    - title: Megna
+      payload: Megna
+    - title: Asta
+      payload: Asta
+  utter_ask_sport:
+  - text: Lastly, help me with the size
+    buttons:
+    - title: 12 Inc
+      payload: 12_Inc
+    - title: 13 Inc
+      payload: 13_Inc
+    - title: 14 Inc
+      payload: 14_Inc
+  utter_ask_12_Inc:
+  - text: "I've got all the information needed.\n\n  Let me recommend you our best\
+      \ options \U0001F60D"
+    image: ./rasa_chatboat/UI/3.png
+    buttons:
+    - title: Details
+      payload: Details
+  utter_lead_q6:
+  - text: "Thanks for answering,Here is your Details: \n   Manufacturer: {manufacturer},\n\
+      \  Model: {Hyundai},\n  Variant: {i20},\n  Size: {sport}."
+    buttons:
+    - title: I'm intrested
+      payload: I'm intrested
+  utter_car_model_name:
+  - text: Please select your car manufacturer 👇
+    buttons:
+    - title: Maruti
+      payload: Maruti
+    - title: Hyundai
+      payload: hyundai
+    - title: Toyota
+      payload: Toyota
+    - title: TaTa
+      payload: TaTa
+    - title: Suzuki
+      payload: Suzuki
+    - title: Honda
+      payload: /<Honda>
+  utter_Brand_name:
+  - text: Here are the brand options available 😍👇
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_hyundai:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_Maruti:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_Toyota:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_TaTa:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_Suzuki:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_Honda:
+  - text: Please select the car model you own.
+    buttons:
+    - title: i20
+      payload: i20
+    - title: i10
+      payload: i10
+    - title: Verna
+      payload: Verna
+    - title: Creta
+      payload: Creta
+  utter_i20:
+  - text: "\U0001F4DD Noted!\n\n Also, help me with the car variant."
+    buttons:
+    - title: Sport
+      payload: sport
+    - title: Megna
+      payload: Megna
+    - title: Asta
+      payload: Asta
+  utter_i10:
+  - text: "\U0001F4DD Noted!\n\n Also, help me with the car variant."
+    buttons:
+    - title: Sport
+      payload: sport
+    - title: Megna
+      payload: Megna
+    - title: Asta
+      payload: Asta
+  utter_Verna:
+  - text: "\U0001F4DD Noted!\n\n Also, help me with the car variant."
+    buttons:
+    - title: Sport
+      payload: sport
+    - title: Megna
+      payload: Megna
+    - title: Asta
+      payload: Asta
+  utter_Creta:
+  - text: "\U0001F4DD Noted!\n\n Also, help me with the car variant."
+    buttons:
+    - title: Sport
+      payload: sport
+    - title: Megna
+      payload: Megna
+    - title: Asta
+      payload: Asta
+  utter_sport:
+  - text: Lastly, help me with the size
+    buttons:
+    - title: 12 Inc
+      payload: 12_Inc
+    - title: 13 Inc
+      payload: 13_Inc
+    - title: 14 Inc
+      payload: 14_Inc
+  utter_Megna:
+  - text: Lastly, help me with the size
+    buttons:
+    - title: 12 Inc
+      payload: 12_Inc
+    - title: 13 Inc
+      payload: 13_Inc
+    - title: 14 Inc
+      payload: 14_Inc
+  utter_Asta:
+  - text: Lastly, help me with the size
+    buttons:
+    - title: 12 Inc
+      payload: 12_Inc
+    - title: 13 Inc
+      payload: 13_Inc
+    - title: 14 Inc
+      payload: 14_Inc
+  utter_12_inc:
+  - text: "I've got all the information needed.\n\n  Let me recommend you our best\
+      \ options \U0001F60D"
+    image: https://i.imgur.com/nGF1K8f.jpg
+    buttons:
+    - title: Details
+      payload: /I'm intrested
+    - title: I'm intrested
+      payload: I'm intrested
+  utter_13_Inc:
+  - text: "I've got all the information needed.\n\n  Let me recommend you our best\
+      \ options \U0001F60D"
+    image: https://i.imgur.com/nGF1K8f.jpg
+    buttons:
+    - title: Details
+      payload: /I'm intrested
+    - title: I'm intrested
+      payload: I'm intrested
+  utter_14_inc:
+  - text: "I've got all the information needed.\n\n  Let me recommend you our best\
+      \ options \U0001F60D"
+    image: https://i.imgur.com/nGF1K8f.jpg
+    buttons:
+    - title: Details
+      payload: /I'm intrested
+    - title: I'm intrested
+      payload: I'm intrested
+  utter_goodbye:
+  - text: Bye
+actions:
+- utter_greet
+- utter_lead_q1
+- utter_lead_q2
+- utter_lead_q4
+- utter_lead_q5
+- utter_ask_name
+- utter_goodbye
+- utter_ans
+- utter_car_model_name
+- utter_Brand_name
+- utter_hyundai
+- utter_Maruti
+- utter_TaTa
+- utter_Toyota
+- utter_Suzuki
+- utter_Honda
+- utter_i20
+- utter_i10
+- utter_Verna
+- utter_Creta
+- utter_sport
+- utter_Megna
+- utter_Asta
+- utter_12_inc
+- utter_13_Inc
+- utter_14_Inc
+- utter_14_inc
+- utter_urlAvailable
+- utter_lead_q6
+- utter_lead_q7
+- utter_ask_requirement
+- utter_ask_url
+- utter_ask_manufacturer
+- utter_ask_Hyundai
+- utter_ask_i20
+- utter_ask_model
+- utter_ask_sport
+- utter_ask_12_Inc
+- utter_lead_q3
+forms:
+- lead_form_p1
+- lead_form_p2
+- lead_form_p3
+- lead_form_p4

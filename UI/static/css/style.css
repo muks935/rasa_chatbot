@@ -1,0 +1,766 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Satisfy);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+/* General */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -khtml-user-drag: none;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* General end*/
+
+
+/* Demo */
+.hd1 {
+  margin-top: 15vh;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.powered {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.powered img {
+  width: 110px;
+  position: relative;
+  top: 8px;
+}
+
+.footer {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 40px;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.foo-txt {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Satisfy', cursive;
+  text-shadow: none;
+  color: #272727;
+}
+
+.fa-heart {
+  color: #fb2323;
+}
+/* Demo end */
+
+
+
+/* MyBot */
+mybot.center .chatCont,
+mybot.center .profile_div {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+mybot.left .chatCont,
+mybot.left .profile_div {
+  left: 0;
+}
+
+
+mybot .close {
+  position: absolute;
+  right: 5px;
+  margin-top: -60px;
+  color: #868686;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+mybot .bot_p_img {
+  width: 80px;
+  border-radius: 50%;
+  width: 80px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16), 0 0px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+
+mybot .resultDiv .botResult {
+  word-wrap: break-word;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 70%;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  position: relative;
+  border: solid 1px #e6e6e6;
+  font-family: "Roboto",sans-serif;
+}
+
+mybot .resultDiv .botResult:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid #fff;
+  left: -15px;
+  margin-top: -12px;
+  display: none;
+}
+
+mybot .resultDiv .userEnteredText {
+  background: #2dacf0;
+  float: right;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  /*width: 200px;*/
+  position: relative;
+  left: -6px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  word-wrap: break-word;
+  font-family: "Roboto",sans-serif;
+  max-width: 70%;
+}
+
+mybot .resultDiv .userEnteredText:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-left: 15px solid #01345b;
+  position: absolute;
+  right: -15px;
+  margin-top: -12px;
+  display: none;
+}
+
+
+mybot .img-profile {
+  background-color: rgb(45,172,240);
+  width: 115px;
+  border-radius: 4px; 
+}
+
+mybot .col-hgt {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
+mybot .chat-txt {
+   background: white;
+  color:black;
+  padding: 15px 15px;
+  border-radius: 50px;
+}
+
+/* Spinner start */
+mybot .spinner {
+  background: #2dacf0;
+  width: 70px;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  position: relative;
+  top: -7px;
+  left: 19px;
+  padding: 7px 10px;
+}
+
+mybot .spinner:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid #01345b;
+  left: -15px;
+  margin-top: -7px;
+  display: none;
+}
+
+mybot .spinner > div {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  margin-right: 5px;
+}
+
+mybot .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+mybot .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+/* Spinner End */
+
+
+/* Suggestions */
+mybot .suggestion {
+  width: 100%;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  background: transparent;
+  color: #333;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  border: solid 0px #e6e6e6;
+  font-family: "Roboto",sans-serif;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+mybot .suggestion:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid #fff;
+  left: -15px;
+  margin-top: -12px;
+  display: none;;
+}
+
+mybot .suggestion .sugg-options {
+  display: block;
+  background: #2dacf0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 300;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.33);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 12px;
+  transition: 0.2s ease-out;
+animation: slide-in-from-bottom 0.2s ease-out backwards;
+}
+mybot .suggestion .sugg-options:hover {
+   margin-top: -2px;
+}
+
+mybot .suggestion .sugg-title {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+mybot .suggestion span:last-child {
+ /* margin-bottom: 0;*/
+}
+/* Suggestions end */
+
+
+
+@media screen and (max-width: 500px) {
+  mybot .resultDiv .userEnteredText,
+  mybot .resultDiv .botResult,
+  mybot .suggestion {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  mybot .chatCont,
+  mybot .chatForm {
+    width: 100%;
+  }
+  mybot .chatCont {
+    height: 70% !important;
+  }
+
+}
+/* MyBot end */
+
+  #header {
+    
+    text-align: center;
+    margin-top: 50px;
+    font-size: xx-large;
+  }
+
+/* Create two columns that float next to eachother */
+mybot .column {
+  float: left;
+  width: 50%;
+  margin-top: -10px;
+  padding: 0;
+}
+mybot .submit_button{
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width :110%
+}
+mybot .user_input
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+ mybot #chat-input
+{
+    text-indent: 30px;
+ }
+ mybot .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mybot .chat_header {
+  height: auto;
+  background: rgb(45,172,240);
+  /* #6072e6 */
+  border-radius: 10px 10px 0px 0px;
+  padding: 11px;
+  font-size: 20px;
+}
+
+mybot .footer {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 60px;
+  width: auto;
+  left: 255px;
+  right: 6px;
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto",sans-serif;
+}
+
+
+
+/***  Imran  **/
+
+mybot .card-body {
+  padding: 10px;
+  padding-top: 20px;
+  background-color: #FFF;
+  border-radius: 14px 14px 0px 0px;
+  height: 95px;
+  width: 100%;
+  margin-left: 0px;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0,0,0,0.11);
+  font-weight: 400 !important;
+  font-family: "Roboto",sans-serif;
+}
+mybot .card-body strong {
+  display: block;
+  position: relative;
+}
+mybot .card-body strong span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+mybot .card-body .form-control {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  height: 41px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+mybot .profile_div {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 110px;
+  cursor: pointer;
+  height: 40px;
+  transition: 0.2s ease-out;
+}
+mybot .profile_div:hover {
+transform: translateY(-2px) !important;
+}
+mybot .profile_div .row {
+  margin: 0;
+}
+mybot .profile_div .row .col-hgt {
+  width: 100%;
+  margin: 0;
+  height: 40px;
+  display: flex;
+  background: transparent;
+  border-radius: 0;
+}
+mybot .profile_div .row .col-hgt .img-profile {
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* background: #21abf3; */
+  border-radius: 8px;
+  -ms-box-shadow: 0 6px 10px 0 rgba(45, 172, 240, 0.4);
+  -o-box-shadow: 0 6px 10px 0 rgba(45, 172, 240, 0.4);
+  box-shadow: 0 6px 10px 0 rgba(45, 172, 240, 0.4);
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s ease-out;
+  animation: slide-in-from-bottom 0.2s ease-out backwards;
+  background: rgb(45, 172, 240) none repeat scroll 0% 0%; 
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  text-transform: capitalize;
+}
+
+mybot .test-button {
+  margin-bottom: 0;
+  margin-top: 11px;
+  z-index: auto;
+  margin-left: 10px;
+  border-radius: 4px;
+  width: 24px;
+  color: black;
+  background-color: rgb(45,172,240);
+  border: none;
+  outline: none;
+  padding: 0px;
+  text-indent: -100px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+mybot .test-button::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  position: absolute;
+  color: #fff;
+  background: url("../img/up-icon.png") no-repeat center center;
+}
+mybot .test-button1 {
+  margin-bottom: 0px;
+  margin-top: 11px;
+  z-index: auto;
+  margin-left: 10px;
+  border-radius: 4px;
+  width: 24px;
+  color: black;
+  background-color: rgb(45,172,240);
+  border: none;
+  outline: none;
+  padding: 0px;
+  text-indent: -100px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+mybot .test-button1::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  position: absolute;
+  color: #fff;
+  background: url("../img/down-icon.png") no-repeat center center;
+}
+mybot .logo {
+  width: 120px;
+  height: auto;
+}
+mybot .profile_div .row .col-hgt .img-profile img {
+  margin-right: 8px;
+}
+
+.resultDiv {
+  padding: 10% 24px 24px 24px;
+  overflow-y: auto;
+  height: 82%;
+}
+mybot .chat_header_none {
+  height: 0%;
+  background: rgb(45,172,240);
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px;
+  font-size: 20px;
+}
+mybot .chatCont {
+  position: fixed;
+  width: 400px;
+  height: calc(100% - 80px) !important;
+  border: 0px solid #dcdcdc;
+  bottom: 75px;
+  right: 24;
+  background-color: rgb(45,172,240);
+  border-radius: 10px;
+  z-index: 10000;
+  display: none;
+  -ms-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  -o-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+}
+mybot .chatForm {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0;
+  width: 100%;
+  display: none;
+}
+mybot .bot-txt, mybot .bot-txt:focus {
+  box-shadow: none;
+  border-radius: 11;
+  height: 46px;
+  border: 12;
+  border-top: 0px solid #dcdcdc;
+  border-left: 0px solid #dcdcdc;
+  border-radius: 0 0 10px 10px;
+  border-color: #fff;
+}
+mybot .chatCont .chatForm .card-body hr {
+  margin: 10px 0 10px -11px !important;
+}
+mybot .bot_profile {
+  position: absolute;
+  right: 0px;
+  margin-top: 0;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  background: rgb(45, 172, 240) none repeat scroll 0% 0%;
+  color: rgba(45, 172, 240, 0.4);
+  border-radius: 8px;
+  -ms-box-shadow: 0 6px 10px 0;
+  -o-box-shadow: 0 6px 10px 0;
+  box-shadow: 0 6px 10px 0;
+  bottom: -51px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+animation: slide-in-from-bottom 0.2s ease-out backwards;
+}
+
+mybot .bot_profile:hover {
+ transform: translateY(-2px) !important;
+}
+mybot .bot_profile img {
+  margin-top: 12px;
+}
+mybot .footer strong {
+  color: #174d8c;
+  font-size: 14px;
+}
+
+mybot .resultDiv .container.botResult {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  max-width: 100%;
+  margin-bottom: 50px;
+} 
+mybot .resultDiv .container.botResult .item.active {
+  display: flex;
+}
+mybot .resultDiv .container.botResult .item img {
+  margin-right: 12px;
+  -ms-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  -o-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  width: 160px;
+  height: auto;
+}
+mybot .resultDiv .container.botResult .item.active img:last-child {
+  margin-right: 0px;
+}
+mybot .resultDiv .container.botResult .carousel-indicators {
+  display: none;
+}
+mybot .resultDiv .container.botResult .carousel-control.left {
+  width: 39px;
+  height: 49px;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: solid 1px #d3d3d3;
+  border-radius: 0 10px 10px 0;
+  opacity: 1;
+  background: #fff;
+  background: #fff url("../img/slider-left-icon.png") no-repeat center center;
+}
+mybot .resultDiv .container.botResult .carousel-control.right {
+  width: 39px;
+  height: 49px;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: solid 1px #d3d3d3;
+  border-radius: 10px 0 0 10px;
+  opacity: 1;
+  background: #fff;
+  background: #fff url("../img/slider-right-icon.png") no-repeat center center;
+}
+mybot .resultDiv .container.botResult .carousel-control.left span, mybot .resultDiv .container.botResult .carousel-control.right span {
+  display: none;
+}
+.resultDiv h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto",sans-serif;
+  margin: 15px 0 0;
+}
+.resultDiv h2 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 0 0;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+mybot .chatCont {
+  width: 84%;
+}  
+mybot .footer {
+  width: auto;
+  left: auto;
+  right: 15px;  
+}
+.resultDiv {
+  height: 74%;
+}
+}
+
+
+

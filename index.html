@@ -1,0 +1,48 @@
+
+
+<html>
+  <head>
+          <title>Rasa Chatbot</title>
+            <meta charset="UTF-8">
+      <meta name=viewport content="width=device-width, initial-scale=1">
+
+      <!-- CSS -->
+
+        
+  </head>
+  <body>
+
+          <div class="confidential-note">
+            <div class="header" id="header">
+              RASA Chat-bot Demo
+            </div>
+            <br/>
+            <div style="width: 100%;">
+              
+            </div>
+          </div>
+      
+          
+          <div id="webchat"></div>
+          <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+          // Or you can replace latest with a specific version
+          <script>
+
+            WebChat.default.init({
+              selector: "#webchat",             
+              customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+              socketUrl: "http://134.209.189.219:5005",
+              socketPath: "/socket.io/",
+              title: "Chatbot",
+              subtitle: "Elumchat",
+              storage:"local"
+            })
+          </script>
+
+    <!--container end-->
+
+    
+    <!--JS-->
+   
+  </body>
+</html>
