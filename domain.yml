@@ -42,6 +42,12 @@ slots:
   budget:
     type: unfeaturized
     auto_fill: false
+<<<<<<< HEAD
+=======
+  email:
+    type: unfeaturized
+    auto_fill: false
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
   i20:
     type: unfeaturized
     auto_fill: false
@@ -54,6 +60,12 @@ slots:
   name:
     type: unfeaturized
     auto_fill: false
+<<<<<<< HEAD
+=======
+  phone:
+    type: unfeaturized
+    auto_fill: false
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
   requested_slot:
     type: unfeaturized
   requirement:
@@ -70,9 +82,23 @@ slots:
     auto_fill: false
 responses:
   utter_ask_name:
+<<<<<<< HEAD
   - text: contact_details
   utter_lead_q2:
   - text: Thanks for your information and being this patient. We appreciate it!
+=======
+  - text: Great. May I know your name please?
+  utter_ask_email:
+  - text: Can you please share your email ID? Trust us, we will never spam!
+  utter_ask_phone:
+  - text: Can I have your phone number
+  utter_lead_q2:
+  - text: Thanks for answering all our questions and being this patient. We appreciate
+      it!
+  utter_lead_q3:
+  - text: "Here is your data(We hide your contact number for security reasons):-\n\
+      \        Name: {name},\n         email: {email}. "
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
   utter_lead_q4:
   - text: I will have our Business Experts get in touch with you soon, to make your
       project a reality!
@@ -326,9 +352,18 @@ actions:
 - utter_greet
 - utter_lead_q1
 - utter_lead_q2
+<<<<<<< HEAD
 - utter_lead_q4
 - utter_lead_q5
 - utter_ask_name
+=======
+- utter_lead_q3
+- utter_lead_q4
+- utter_lead_q5
+- utter_ask_name
+- utter_ask_email
+- utter_ask_phone
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
 - utter_goodbye
 - utter_ans
 - utter_car_model_name
@@ -361,7 +396,10 @@ actions:
 - utter_ask_model
 - utter_ask_sport
 - utter_ask_12_Inc
+<<<<<<< HEAD
 - utter_lead_q3
+=======
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
 forms:
 - lead_form_p1
 - lead_form_p2

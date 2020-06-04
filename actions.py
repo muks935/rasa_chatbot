@@ -131,7 +131,11 @@ class LeadFormThirdPart(FormAction):
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:
         """A list of required slots that the form has to fill"""
+<<<<<<< HEAD
         return ["name" ]
+=======
+        return ["name", "email", "phone" ]
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
         """A dictionary to map required slots to
@@ -142,7 +146,17 @@ class LeadFormThirdPart(FormAction):
         return {
             "name": [
                 self.from_text(),
+<<<<<<< HEAD
             ],                     
+=======
+            ],
+            "email": [
+                self.from_text(),
+            ],
+            "phone": [
+                self.from_text(),
+            ],            
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
             
         }
     
@@ -155,8 +169,14 @@ class LeadFormThirdPart(FormAction):
         """Define what the form has to do
             after all required slots are filled"""
 
+<<<<<<< HEAD
        
         dispatcher.utter_template("utter_lead_q2", tracker)
+=======
+        # utter submit template
+        dispatcher.utter_template("utter_lead_q2", tracker)
+        dispatcher.utter_template("utter_lead_q3", tracker)
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
         dispatcher.utter_template("utter_lead_q5", tracker)        
         
         return []        
@@ -209,7 +229,11 @@ class LeadFormThirdPart(FormAction):
         """Define what the form has to do
             after all required slots are filled"""
 
+<<<<<<< HEAD
         
+=======
+        # utter submit template
+>>>>>>> 1753855ff2bcd229cc06a2f59c3f99d22a6f43b2
         dispatcher.utter_template("utter_lead_q6", tracker)
         
         return []        
